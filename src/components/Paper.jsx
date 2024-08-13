@@ -3,8 +3,8 @@ import useFetch from "./useFetch";
 import SearchBar from "./SearchBar";
 
 function Paper() {
-  const [query, setQuery] = useState("Tech");
-  const { papers, loading, error } = useFetch(query, 5);
+  const [query,setQuery] = useState("Tech");
+  const {papers,loading,error} = useFetch(query,5);
 
   const handleSearch = (searchQuery) => {
     setQuery(searchQuery);
