@@ -11,7 +11,7 @@ function SearchBar({handleSearch}) {
 
   return (
     <div>
-      <form onSubmit={handleSubmit} className="w-[500px] relative mx-auto">
+      <form onSubmit={handleSubmit} className="w-50 mx-auto">
         <div className="relative flex justify-between">
         <input
           type="search"
