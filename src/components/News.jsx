@@ -2,13 +2,15 @@ import { useState , useEffect} from "react";
 import axios from 'axios'
 import Cards from './Cards'
 
+const API_KEY=process.env.NEWS_API
+
 function News(){
     const [articles,setArticles]=useState([]);
     useEffect( 
         ()=>{
     const fetchNews= async()=>{
     try{
-    const response=await axios.get('https://newsapi.org/v2/everything?q=cybersecurity&blockchain&AI&webdevelopment&appdevelopment&cryptocurrency&from=2024-01-01sortBy=popularity&apiKey=3646f43dda1146d3a4cd95338cec5c0d');
+    const response=await axios.get('https://newsapi.org/v2/everything?q=cybersecurity&blockchain&AI&webdevelopment&appdevelopment&cryptocurrency&from=2024-01-01sortBy=popularity&apiKey=API_KEY');
     const articles=response.data.articles;
     setArticles(articles);
     }
