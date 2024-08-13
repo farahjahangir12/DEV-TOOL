@@ -23,7 +23,7 @@ function Paper() {
             <h2 className="font-bold text-3xl mb-4 text-[#fecea8]">{paper.title}</h2>
             <h5 className="font-bold text-xl mb-2 text-[#fecea8]">Abstract</h5>
             <p className="text-white">{paper.abstract}||{paper.title}</p>
-            <div className="flex gap-4 mt-3 text-[#fecea8] text-sm text-center">
+            <div className="flex flex-col md:flex-row gap-4 mt-3 text-[#fecea8] text-sm text-center">
             <p className="rounded-full p-2 md:p-4 bg-[#e46161]"><strong>Authors:</strong> {paper.authors.map(author => author.name).join(', ')}</p>
             <p className="rounded-full p-2 md:p-4 bg-[#e46161]"><strong>Year:</strong> {paper.year}</p>
             <p className="rounded-full p-2 md:p-4 bg-[#e46161]"><strong>Citations:</strong> {paper.citationCount}</p>
