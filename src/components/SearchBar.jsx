@@ -11,12 +11,12 @@ function SearchBar({handleSearch}) {
 
   return (
     <div>
-      <form onSubmit={handleSubmit} className="w-full mx-auto">
-        <div className="relative flex justify-between w-50">
+      <form onSubmit={handleSubmit} className="w-[300px] relative mx-auto">
+        <div className="relative flex justify-between">
         <input
           type="search"
           value={query}
-          className="bg-[#fecea8] rounded-full text-white p-2 "
+          className="bg-[#fecea8] rounded-full w-full text-[#fecea8] p-2"
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Enter topic to search for.."
         />
