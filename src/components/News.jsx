@@ -10,7 +10,8 @@ function News(){
         ()=>{
     const fetchNews= async()=>{
     try{
-    const response=await axios.get('https://newsapi.org/v2/everything?q=technology&from=2024-01-01sortBy=popularity&apiKey=API_KEY');
+    const response=await axios.get(`https://newsapi.org/v2/everything?q=technology&from=2024-01-01&sortBy=popularity&apiKey=${API_KEY}`);
+');
     const articles=response.data.articles;
     setArticles(articles);
     }
