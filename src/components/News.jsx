@@ -2,7 +2,7 @@ import { useState , useEffect} from "react";
 import axios from 'axios'
 import Cards from './Cards'
 
-const API_KEY=process.env.NEWS_API
+const API_KEY=process.env.NEWS_KEY
 
 function News(){
     const [articles,setArticles]=useState([]);
