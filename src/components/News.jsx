@@ -24,7 +24,7 @@ function News(){
     if (titled.url!=='Null')
     {
     return(
-        <div className="flex flex-row flex-wrap gap-4 justify-center mt-4">
+        <div className="flex flex-col md:flex-row flex-wrap gap-4 justify-center mt-4">
             
             {
             titled.map((element)=>{
