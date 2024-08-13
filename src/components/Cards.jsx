@@ -1,6 +1,6 @@
 import React from 'react';
 import Tilt from 'react-parallax-tilt';
-import Image from '../assets./pexels-pixabay-414860.jpg';
+import Image from '../assets/pexels-pixabay-414860.jpg';
 
 
 function Cards({image,title,content}) {
