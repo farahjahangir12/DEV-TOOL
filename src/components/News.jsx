@@ -1,5 +1,4 @@
 import { useState , useEffect} from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios'
 import Cards from './Cards'
 
@@ -9,7 +8,7 @@ function News(){
         ()=>{
     const fetchNews= async()=>{
     try{
-    const response=await axios.get('https://newsapi.org/v2/everything?q=cybersecurity OR blockchain OR AI OR "web development" OR "app development" OR cryptocurrency&from=2024-01-01sortBy=popularity&apiKey=3646f43dda1146d3a4cd95338cec5c0d');
+    const response=await axios.get('https://newsapi.org/v2/everything?q=cybersecurity&blockchain&AI&webdevelopment&appdevelopment&cryptocurrency&from=2024-01-01sortBy=popularity&apiKey=3646f43dda1146d3a4cd95338cec5c0d');
     const articles=response.data.articles;
     setArticles(articles);
     }
