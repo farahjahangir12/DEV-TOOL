@@ -19,7 +19,7 @@ function Paper() {
       {error && <div>Error: {error}</div>}
       <div className="mt-4 p-4">
         {papers.map((paper) => (
-          <div key={paper.paperId} className=" border border-[#45171d] p-4 rounded-lg mb-4 p-4">
+          <div key={paper.paperId} className="border border-[#45171d] p-4 rounded-lg mb-4 p-4">
             <h2 className="font-bold text-3xl mb-4 text-[#fecea8]">{paper.title}</h2>
             <h5 className="font-bold text-xl mb-2 text-[#fecea8]">Abstract</h5>
             <p className="text-white">{paper.abstract}||{paper.title}</p>
