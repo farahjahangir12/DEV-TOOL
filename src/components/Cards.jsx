@@ -1,5 +1,6 @@
 import React from 'react';
 import Tilt from 'react-parallax-tilt';
+import Image from './assets./pexels-pixabay-414860.jpg';
 
 
 function Cards({image,title,content}) {
@@ -12,7 +13,7 @@ function Cards({image,title,content}) {
       transitionSpeed={2000}
     >
       <div className="tilt-inner w-64 h-100 mx-auto bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg overflow-hidden">
-        <img className="w-full h-40 object-cover" src={image ||"src/assets/pexels-pixabay-414860.jpg"} alt={title} />
+        <img className="w-full h-40 object-cover" src={image || Image} alt={title} />
         <div className="relative p-4 h-60">
           <h3 className="text-[#fecea8] text-opacity-70">{title}</h3>
           <div className="absolute flex justify-center bottom-8 right-0 left-0 mx-auto text-white bg-opacity-50 z-10">
