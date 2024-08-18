@@ -11,7 +11,7 @@ function News() {
             try {
                 const response = await axios.get('https://newsapi.org/v2/top-headlines?country=us', {
                     headers: {
-                        'Authorization': `Bearer 3646f43dda1146d3a4cd95338cec5c0d`,
+                        'Authorization': `Bearer pub_511492ba52de802f00707146b1acc558e54c6`,
                         'Content-Type': 'application/json'
                     }
                 });
