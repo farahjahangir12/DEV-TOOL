@@ -14,9 +14,9 @@ function Paper() {
     <div>
         <div className="mx-auto mt-4 pt-3">
       <SearchBar handleSearch={handleSearch} />
-      </div className="text-white flex justify-center">
-      {loading && <div>Loading Papers...</div>}
-      {error && <div>Error: {error}</div>}
+      </div>
+      {loading && <div className="text-white flex justify-center">Loading Papers...</div>}
+      {error && <div className="text-white flex justify-center">Error: {error}</div>}
       <div className="mt-4 p-4">
         {papers.map((paper) => (
           <div key={paper.paperId} className="border border-[#45171d] p-4 rounded-lg mb-4 p-4">
