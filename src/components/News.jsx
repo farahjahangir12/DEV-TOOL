@@ -31,7 +31,7 @@ function News() {
             {
                 titled.map((element) => (
                     <Cards 
-                        key={element.url} 
+                        key={element.link} 
                         image={element.image_url || Image} 
                         title={element.title}  
                         content={element.link} 
