@@ -4,8 +4,7 @@ import axios from 'axios';
 import Cards from './Cards';
 import Image from '../assets/pexels-pixabay-414860.jpg';
 
-const API_KEY="pub_511492ba52de802f00707146b1acc558e54c6"
-
+const API_KEY=NEWS_KEY
 function News() {
     
     const [articles, setArticles] = useState([]);
@@ -24,7 +23,7 @@ function News() {
         fetchNews();
     }, []);
 
-    const titled = articles.filter((article) => article.title && article.link!=='Null');
+    const titled = articles.filter((article) => article.title && article.link!==undefined);
 
     return (
         <div className="flex flex-row flex-wrap gap-4 justify-center mt-4">
