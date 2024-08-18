@@ -14,7 +14,7 @@ function Paper() {
     <div>
         <div className="mx-auto mt-4 pt-3">
       <SearchBar handleSearch={handleSearch} />
-      </div>
+      </div className="text-white flex justify-center">
       {loading && <div>Loading Papers...</div>}
       {error && <div>Error: {error}</div>}
       <div className="mt-4 p-4">
