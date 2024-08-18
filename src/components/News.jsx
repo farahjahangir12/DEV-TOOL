@@ -6,13 +6,14 @@ import Image from '../assets/pexels-pixabay-414860.jpg';
 
 const API_KEY="pub_511492ba52de802f00707146b1acc558e54c6"
 
-function News([topics]) {
+function News() {
+    
     const [articles, setArticles] = useState([]);
 
     useEffect(() => {
         const fetchNews = async () => {
             try {
-                const response = await axios.get(`https://newsdata.io/api/1/news?apikey=${API_KEY}&q=${topics}&language=en`
+                const response = await axios.get(`https://newsdata.io/api/1/news?apikey=${API_KEY}&q=technology&language=en`
                    );
                 const articles = response.data.results;
                 setArticles(articles);
